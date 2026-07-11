@@ -1,0 +1,19 @@
+services:
+  secretbox:
+    build: .
+    container_name: secretbox
+    restart: unless-stopped
+    ports:
+      - "5345:5345"
+    environment:
+      - PORT=5345
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-change-me}
+      # REQUIRED in production: 64 hex chars. Generate:
+      #   node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+      - MASTER_KEY=${MASTER_KEY:?set MASTER_KEY in .env}
+      - DB_PATH=/app/data/secretbox.db
+    volumes:
+      - secretbox-data:/app/data
+
+volumes:
+  secretbox-data:
