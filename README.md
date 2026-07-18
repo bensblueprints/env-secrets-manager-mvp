@@ -1,5 +1,9 @@
 # 📦 Secretbox
 
+## Demo
+
+VIDEO-PLACEHOLDER
+
 **Self-hosted team secrets & env-var manager. Envelope-encrypted at rest, a CLI that pipes straight into `.env`, full audit log. Pay once — no per-seat Doppler bill.**
 
 ![MIT](https://img.shields.io/badge/license-MIT-green) ![Node](https://img.shields.io/badge/node-%3E%3D20-brightgreen)
