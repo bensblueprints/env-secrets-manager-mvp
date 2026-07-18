@@ -2,7 +2,11 @@
 
 ## Demo
 
-VIDEO-PLACEHOLDER
+
+
+https://github.com/user-attachments/assets/b0a8fdc0-5b87-4db5-88c4-b9095cf8cc36
+
+
 
 **Self-hosted team secrets & env-var manager. Envelope-encrypted at rest, a CLI that pipes straight into `.env`, full audit log. Pay once — no per-seat Doppler bill.**
 
